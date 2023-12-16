@@ -1,0 +1,84 @@
+body{
+	margin: 0;
+	padding:0;
+}
+.container .satu{
+	width:800px;
+	border:1px solid black;
+	margin:auto;
+	padding:5px;
+}
+.kiri{
+	padding:30px;
+	width:150px;
+	height:200px;
+	background-color:salmon;
+	float:left;
+	box-sizing:border-box;
+}
+.tengah{
+	width:500px;
+	height:200px;
+	background-color:lightskyblue;
+	float:left;
+}
+.kanan{
+	width:150px;
+	height:200px;
+	background-color:limegreen;
+	float:left;
+}
+.container .dua{
+	width:900px;
+	margin:10px auto;
+	border:5px solid black;
+}
+.kotak{
+	width: 100px;
+	height: 100px;
+	background-color:salmon;
+	text-align: center;
+	line-height: 100px;
+	margin:5px;
+}
+.kotak1 { transition: margin-left 3s, transform 3s 2s, background-color 2s 3s; }
+.kotak2 { transition: all 3s ease-in; }
+.kotak3 { transition: all 3s ease-out; }
+.kotak4 { transition: all 3s ease-in-out; }
+.kotak5 { transition: all 3s linear; }
+.kotak6 { transition: all 3s cubic-bezier(0,0,0,0,); }
+.kotakA{
+	width:200px;
+	height:200px;
+	background-color: blue;
+	line-height: 200px;
+	text-align: center;
+	animation:animasianime 2s ease infinite alternate forwards ;
+}
+
+.container:hover .kotak{
+	transform:rotate(180deg);
+	margin-left: 800px;
+	background-color: royalblue;
+}
+.container:taget .kotakA{
+	animation:animasianime;
+}
+.footer a{
+	margin-bottom:20px;
+	
+}
+
+@keyframes animasianime{
+	0%{
+		width:200px;
+	}
+	50%{
+		width:500px;
+		height:200px;
+	}
+	100%{
+		width:500px;
+		height: 500px;
+	}
+}
